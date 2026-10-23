@@ -1,0 +1,16 @@
+{
+  "embree_release": "3.13.5",
+  "embree_archive_url": "https://github.com/RenderKit/embree/releases/download/v3.13.5/embree-3.13.5.x86_64.linux.tar.gz",
+  "embree_archive_sha256": "6454c9793e50213f681a34be3b0128f263caad0d663a1409f0bc2f98644bfa98",
+  "source_sha256": {
+    "Native/renderer.cu": "45fb28ce60ab38b388afecefdab361b5f4a0b5483587c33a1f10ca8be8430ec2",
+    "Native/bvh.cuh": "cb3568aed9d55bf8ffe80cffd572cb048112f3d031a901826d5bda78d88f3e71",
+    "Native/embree.cuh": "d742808c233ff18b698d3f4280e7d847e2a6e7a75967a487b16c7e3d05d1ca7b",
+    "Native/build.sh": "c843de1790b2af6dc9d65a2b2a4e672df704191ce3a33e50a06c52eff4e0e3a5",
+    "Tools/install_embree.sh": "69a05338a067a3cc95011b31e7a558bd9eed7d60b20d0f10324be2f9b6a3c20d",
+    "UnityRayTracer/Assets/Plugins/x86_64/libCudaRayTracer.so": "f18614bbfee8344d8ad37deba4ad10f429f5593d9cbb33b28a3cf27108b8d4de",
+    "UnityRayTracer/Assets/RayTracing/Editor/DemoSceneBuilder.cs": "0b01d93828dd42648faa8f01e7de1028160c81c95336d7207e180639f27253e9",
+    "UnityRayTracer/Assets/RayTracing/DemoScenes.cs": "a0fb17deb305279420515a25670275985237e07ed72177d252cb8bf4e39969e9"
+  },
+  "notes": "Embree uses its optimized official CPU triangle kernels with our shared path integrator. OpenMP distributes pixels in both multicore backends. Native and Unity Editor timings are separate runs. No Embree build time is included in compute measurements."
+}

@@ -1,0 +1,222 @@
+[
+  {
+    "scene": "Suzanne room",
+    "backend": 0,
+    "triangles": 982,
+    "samples": 8,
+    "loadedScenes": 1,
+    "maxError": 0,
+    "mae": 0,
+    "rmse": 0,
+    "changedFraction": 0
+  },
+  {
+    "scene": "Suzanne room",
+    "backend": 1,
+    "triangles": 982,
+    "samples": 8,
+    "loadedScenes": 1,
+    "maxError": 0,
+    "mae": 0,
+    "rmse": 0,
+    "changedFraction": 0
+  },
+  {
+    "scene": "Suzanne room",
+    "backend": 2,
+    "triangles": 982,
+    "samples": 8,
+    "loadedScenes": 1,
+    "maxError": 0,
+    "mae": 0,
+    "rmse": 0,
+    "changedFraction": 0
+  },
+  {
+    "scene": "Suzanne room",
+    "backend": 3,
+    "triangles": 982,
+    "samples": 8,
+    "loadedScenes": 1,
+    "maxError": 0,
+    "mae": 0,
+    "rmse": 0,
+    "changedFraction": 0
+  },
+  {
+    "scene": "Dragon room (Sebastian Lague)",
+    "backend": 0,
+    "triangles": 87165,
+    "samples": 8,
+    "loadedScenes": 1,
+    "maxError": 0,
+    "mae": 0,
+    "rmse": 0,
+    "changedFraction": 0
+  },
+  {
+    "scene": "Dragon room (Sebastian Lague)",
+    "backend": 1,
+    "triangles": 87165,
+    "samples": 8,
+    "loadedScenes": 1,
+    "maxError": 0,
+    "mae": 0,
+    "rmse": 0,
+    "changedFraction": 0
+  },
+  {
+    "scene": "Dragon room (Sebastian Lague)",
+    "backend": 2,
+    "triangles": 87165,
+    "samples": 8,
+    "loadedScenes": 1,
+    "maxError": 0,
+    "mae": 0,
+    "rmse": 0,
+    "changedFraction": 0
+  },
+  {
+    "scene": "Dragon room (Sebastian Lague)",
+    "backend": 3,
+    "triangles": 87165,
+    "samples": 8,
+    "loadedScenes": 1,
+    "maxError": 3,
+    "mae": 0.00038580246913580245,
+    "rmse": 0.027777777777777776,
+    "changedFraction": 6.430041152263375e-05
+  },
+  {
+    "scene": "Material gallery",
+    "backend": 0,
+    "triangles": 3090,
+    "samples": 8,
+    "loadedScenes": 1,
+    "maxError": 0,
+    "mae": 0,
+    "rmse": 0,
+    "changedFraction": 0
+  },
+  {
+    "scene": "Material gallery",
+    "backend": 1,
+    "triangles": 3090,
+    "samples": 8,
+    "loadedScenes": 1,
+    "maxError": 0,
+    "mae": 0,
+    "rmse": 0,
+    "changedFraction": 0
+  },
+  {
+    "scene": "Material gallery",
+    "backend": 2,
+    "triangles": 3090,
+    "samples": 8,
+    "loadedScenes": 1,
+    "maxError": 0,
+    "mae": 0,
+    "rmse": 0,
+    "changedFraction": 0
+  },
+  {
+    "scene": "Material gallery",
+    "backend": 3,
+    "triangles": 3090,
+    "samples": 8,
+    "loadedScenes": 1,
+    "maxError": 0,
+    "mae": 0,
+    "rmse": 0,
+    "changedFraction": 0
+  },
+  {
+    "scene": "Depth of field",
+    "backend": 0,
+    "triangles": 4914,
+    "samples": 8,
+    "loadedScenes": 1,
+    "maxError": 0,
+    "mae": 0,
+    "rmse": 0,
+    "changedFraction": 0
+  },
+  {
+    "scene": "Depth of field",
+    "backend": 1,
+    "triangles": 4914,
+    "samples": 8,
+    "loadedScenes": 1,
+    "maxError": 0,
+    "mae": 0,
+    "rmse": 0,
+    "changedFraction": 0
+  },
+  {
+    "scene": "Depth of field",
+    "backend": 2,
+    "triangles": 4914,
+    "samples": 8,
+    "loadedScenes": 1,
+    "maxError": 0,
+    "mae": 0,
+    "rmse": 0,
+    "changedFraction": 0
+  },
+  {
+    "scene": "Depth of field",
+    "backend": 3,
+    "triangles": 4914,
+    "samples": 8,
+    "loadedScenes": 1,
+    "maxError": 1,
+    "mae": 6.430041152263375e-05,
+    "rmse": 0.008018753738744803,
+    "changedFraction": 0
+  },
+  {
+    "scene": "Many Suzannes (BVH)",
+    "backend": 0,
+    "triangles": 60998,
+    "samples": 8,
+    "loadedScenes": 1,
+    "maxError": 0,
+    "mae": 0,
+    "rmse": 0,
+    "changedFraction": 0
+  },
+  {
+    "scene": "Many Suzannes (BVH)",
+    "backend": 1,
+    "triangles": 60998,
+    "samples": 8,
+    "loadedScenes": 1,
+    "maxError": 0,
+    "mae": 0,
+    "rmse": 0,
+    "changedFraction": 0
+  },
+  {
+    "scene": "Many Suzannes (BVH)",
+    "backend": 2,
+    "triangles": 60998,
+    "samples": 8,
+    "loadedScenes": 1,
+    "maxError": 0,
+    "mae": 0,
+    "rmse": 0,
+    "changedFraction": 0
+  },
+  {
+    "scene": "Many Suzannes (BVH)",
+    "backend": 3,
+    "triangles": 60998,
+    "samples": 8,
+    "loadedScenes": 1,
+    "maxError": 3,
+    "mae": 0.00051440329218107,
+    "rmse": 0.03000342915929565,
+    "changedFraction": 6.430041152263375e-05
+  }
+]

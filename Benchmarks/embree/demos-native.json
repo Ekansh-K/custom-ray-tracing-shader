@@ -1,0 +1,677 @@
+[
+  {
+    "snapshot_sha256": "8a5eeb7f23c8efe12a342c811f3e95bc05f521539a32e4d36c2f86b888e8edaa",
+    "triangles": 982,
+    "library": "/home/muthibazz/Projects/Btech/HPC/HPC_Mini_Project/UnityRayTracer/Assets/Plugins/x86_64/libCudaRayTracer.so",
+    "library_sha256": "f18614bbfee8344d8ad37deba4ad10f429f5593d9cbb33b28a3cf27108b8d4de",
+    "omp_threads": "12",
+    "measured_passes": 5,
+    "warmup_passes": 1,
+    "method": "Standalone native render calls; same seeded paths per backend, one warm-up followed by measured passes. CUDA event compute time excludes readback; native call includes it. No Unity texture upload, display, or Editor FPS. Initialization and BVH build are separate.",
+    "results": [
+      {
+        "width": 320,
+        "height": 180,
+        "bounces": 3,
+        "rays_per_pixel": 1,
+        "initialize_ms": 166.38561899890192,
+        "backends": [
+          {
+            "backend": "CPU single",
+            "compute_median_ms": 58.07786560058594,
+            "call_median_ms": 58.10134900093544,
+            "compute_samples_ms": [
+              59.89426803588867,
+              58.07786560058594,
+              56.2225227355957,
+              56.73848342895508,
+              58.40884780883789
+            ],
+            "call_samples_ms": [
+              59.91448699933244,
+              58.10134900093544,
+              56.24612999963574,
+              56.759484999929555,
+              58.431663004739676
+            ],
+            "cpu_threads": 1,
+            "samples_per_pixel": 6,
+            "max_channel_error_vs_cpu": 0,
+            "raw_image_sha256": "1b535c674492480b57b0feeb81e4d96235643333a9499f537072822b2b7bcbdb",
+            "mean_abs_channel_error_vs_cpu": 0,
+            "rmse_vs_cpu": 0.0,
+            "channels_over_1_fraction": 0.0,
+            "embree_build_ms": null
+          },
+          {
+            "backend": "CPU multi",
+            "compute_median_ms": 9.145140647888184,
+            "call_median_ms": 9.162302994809579,
+            "compute_samples_ms": [
+              7.436522960662842,
+              8.363652229309082,
+              9.145140647888184,
+              9.317570686340332,
+              11.132493019104004
+            ],
+            "call_samples_ms": [
+              7.450038996466901,
+              8.3732599960058,
+              9.162302994809579,
+              9.32520600326825,
+              11.144274998514447
+            ],
+            "cpu_threads": 12,
+            "samples_per_pixel": 6,
+            "max_channel_error_vs_cpu": 0,
+            "raw_image_sha256": "1b535c674492480b57b0feeb81e4d96235643333a9499f537072822b2b7bcbdb",
+            "mean_abs_channel_error_vs_cpu": 0,
+            "rmse_vs_cpu": 0.0,
+            "channels_over_1_fraction": 0.0,
+            "embree_build_ms": null
+          },
+          {
+            "backend": "CUDA GPU",
+            "compute_median_ms": 1.3839360475540161,
+            "call_median_ms": 1.465139997890219,
+            "compute_samples_ms": [
+              1.4076800346374512,
+              1.380128026008606,
+              1.3839360475540161,
+              1.403488039970398,
+              1.3503999710083008
+            ],
+            "call_samples_ms": [
+              1.4998170008766465,
+              1.465139997890219,
+              1.4600610011257231,
+              1.4775539966649376,
+              1.4245120037230663
+            ],
+            "cpu_threads": 0,
+            "samples_per_pixel": 6,
+            "max_channel_error_vs_cpu": 1,
+            "raw_image_sha256": "6064059c061d32c2c09ff1bb8fed0c0d1e9f5a796a7b743ff482ff806356ef96",
+            "mean_abs_channel_error_vs_cpu": 1.1574074074074073e-05,
+            "rmse_vs_cpu": 0.0034020690871988586,
+            "channels_over_1_fraction": 0.0,
+            "embree_build_ms": null
+          },
+          {
+            "backend": "Embree CPU multi",
+            "compute_median_ms": 7.286244869232178,
+            "call_median_ms": 7.291233996511437,
+            "compute_samples_ms": [
+              6.355731010437012,
+              7.286244869232178,
+              6.47628116607666,
+              8.461919784545898,
+              15.777030944824219
+            ],
+            "call_samples_ms": [
+              6.361251005728263,
+              7.291233996511437,
+              6.480750002083369,
+              8.466769999358803,
+              15.789104007126298
+            ],
+            "cpu_threads": 12,
+            "samples_per_pixel": 6,
+            "max_channel_error_vs_cpu": 1,
+            "raw_image_sha256": "08e6491fce0232b64f15fa87c71d742678e9d1d4aa4a0410d7979a57ceed5115",
+            "mean_abs_channel_error_vs_cpu": 2.3148148148148147e-05,
+            "rmse_vs_cpu": 0.004811252243246881,
+            "channels_over_1_fraction": 0.0,
+            "embree_build_ms": 1.4170379638671875
+          }
+        ],
+        "bvh": {
+          "nodes": 659,
+          "depth": 17,
+          "build_ms": 1.1352670192718506
+        }
+      }
+    ],
+    "scene": "Suzanne room"
+  },
+  {
+    "snapshot_sha256": "8c3a75a36bc9063bf0fceb2265922e3c8d513adf22bac61e43e5d8909ca3e477",
+    "triangles": 87165,
+    "library": "/home/muthibazz/Projects/Btech/HPC/HPC_Mini_Project/UnityRayTracer/Assets/Plugins/x86_64/libCudaRayTracer.so",
+    "library_sha256": "f18614bbfee8344d8ad37deba4ad10f429f5593d9cbb33b28a3cf27108b8d4de",
+    "omp_threads": "12",
+    "measured_passes": 5,
+    "warmup_passes": 1,
+    "method": "Standalone native render calls; same seeded paths per backend, one warm-up followed by measured passes. CUDA event compute time excludes readback; native call includes it. No Unity texture upload, display, or Editor FPS. Initialization and BVH build are separate.",
+    "results": [
+      {
+        "width": 320,
+        "height": 180,
+        "bounces": 8,
+        "rays_per_pixel": 1,
+        "initialize_ms": 363.52774999977555,
+        "backends": [
+          {
+            "backend": "CPU single",
+            "compute_median_ms": 198.67593383789062,
+            "call_median_ms": 198.7029049996636,
+            "compute_samples_ms": [
+              202.84617614746094,
+              199.1295623779297,
+              197.85153198242188,
+              198.67593383789062,
+              198.54904174804688
+            ],
+            "call_samples_ms": [
+              202.87356300104875,
+              199.1535900015151,
+              197.8756090029492,
+              198.7029049996636,
+              198.57707399933133
+            ],
+            "cpu_threads": 1,
+            "samples_per_pixel": 6,
+            "max_channel_error_vs_cpu": 0,
+            "raw_image_sha256": "9e32830c5d63123955668c2585a0200cba90bd991ae865706fe0ac6437d9d4f7",
+            "mean_abs_channel_error_vs_cpu": 0,
+            "rmse_vs_cpu": 0.0,
+            "channels_over_1_fraction": 0.0,
+            "embree_build_ms": null
+          },
+          {
+            "backend": "CPU multi",
+            "compute_median_ms": 40.96393585205078,
+            "call_median_ms": 40.99510399828432,
+            "compute_samples_ms": [
+              49.96495819091797,
+              39.05393981933594,
+              33.84850311279297,
+              40.96393585205078,
+              45.960689544677734
+            ],
+            "call_samples_ms": [
+              49.997572001302615,
+              39.09321599348914,
+              33.88821199769154,
+              40.99510399828432,
+              45.99344199959887
+            ],
+            "cpu_threads": 12,
+            "samples_per_pixel": 6,
+            "max_channel_error_vs_cpu": 0,
+            "raw_image_sha256": "9e32830c5d63123955668c2585a0200cba90bd991ae865706fe0ac6437d9d4f7",
+            "mean_abs_channel_error_vs_cpu": 0,
+            "rmse_vs_cpu": 0.0,
+            "channels_over_1_fraction": 0.0,
+            "embree_build_ms": null
+          },
+          {
+            "backend": "CUDA GPU",
+            "compute_median_ms": 9.600128173828125,
+            "call_median_ms": 9.68366400047671,
+            "compute_samples_ms": [
+              9.047295570373535,
+              9.765088081359863,
+              9.298463821411133,
+              9.600128173828125,
+              9.892383575439453
+            ],
+            "call_samples_ms": [
+              9.152626000286546,
+              9.855263997451402,
+              9.387637001054827,
+              9.68366400047671,
+              9.980834998714272
+            ],
+            "cpu_threads": 0,
+            "samples_per_pixel": 6,
+            "max_channel_error_vs_cpu": 7,
+            "raw_image_sha256": "c7809de53d3724d16af801d2b96ab76fa2a3a5940b742157f50de2477838866e",
+            "mean_abs_channel_error_vs_cpu": 0.0001099537037037037,
+            "rmse_vs_cpu": 0.023199018178458423,
+            "channels_over_1_fraction": 1.736111111111111e-05,
+            "embree_build_ms": null
+          },
+          {
+            "backend": "Embree CPU multi",
+            "compute_median_ms": 20.94003677368164,
+            "call_median_ms": 20.970074001525063,
+            "compute_samples_ms": [
+              20.94003677368164,
+              27.96164321899414,
+              19.95794105529785,
+              25.389259338378906,
+              15.215676307678223
+            ],
+            "call_samples_ms": [
+              20.970074001525063,
+              27.99361500365194,
+              19.99023400276201,
+              25.62478100298904,
+              15.247285999066662
+            ],
+            "cpu_threads": 12,
+            "samples_per_pixel": 6,
+            "max_channel_error_vs_cpu": 180,
+            "raw_image_sha256": "0a3a78a367534848b386163a5cf2a5bb34955f9a85fa81b2aba95a9b953397b0",
+            "mean_abs_channel_error_vs_cpu": 0.002905092592592593,
+            "rmse_vs_cpu": 0.5202051767580999,
+            "channels_over_1_fraction": 0.00011574074074074075,
+            "embree_build_ms": 8.343303680419922
+          }
+        ],
+        "bvh": {
+          "nodes": 57839,
+          "depth": 22,
+          "build_ms": 129.33953857421875
+        }
+      }
+    ],
+    "scene": "Dragon room"
+  },
+  {
+    "snapshot_sha256": "47d7d314b180caaf3f53f7c0237815c9cbd580445e0515489d57ad537581857e",
+    "triangles": 3090,
+    "library": "/home/muthibazz/Projects/Btech/HPC/HPC_Mini_Project/UnityRayTracer/Assets/Plugins/x86_64/libCudaRayTracer.so",
+    "library_sha256": "f18614bbfee8344d8ad37deba4ad10f429f5593d9cbb33b28a3cf27108b8d4de",
+    "omp_threads": "12",
+    "measured_passes": 5,
+    "warmup_passes": 1,
+    "method": "Standalone native render calls; same seeded paths per backend, one warm-up followed by measured passes. CUDA event compute time excludes readback; native call includes it. No Unity texture upload, display, or Editor FPS. Initialization and BVH build are separate.",
+    "results": [
+      {
+        "width": 320,
+        "height": 180,
+        "bounces": 8,
+        "rays_per_pixel": 1,
+        "initialize_ms": 167.11049399600597,
+        "backends": [
+          {
+            "backend": "CPU single",
+            "compute_median_ms": 80.6534652709961,
+            "call_median_ms": 80.66530899668578,
+            "compute_samples_ms": [
+              80.5130386352539,
+              80.69815063476562,
+              80.49068450927734,
+              80.6534652709961,
+              80.90059661865234
+            ],
+            "call_samples_ms": [
+              80.52657300140709,
+              80.71207800094271,
+              80.50515099603217,
+              80.66530899668578,
+              80.91540800523944
+            ],
+            "cpu_threads": 1,
+            "samples_per_pixel": 6,
+            "max_channel_error_vs_cpu": 0,
+            "raw_image_sha256": "502a9997bf83548bd4ff36e453b8d0c585e9bca5bc386da3bdd927ef38f9211c",
+            "mean_abs_channel_error_vs_cpu": 0,
+            "rmse_vs_cpu": 0.0,
+            "channels_over_1_fraction": 0.0,
+            "embree_build_ms": null
+          },
+          {
+            "backend": "CPU multi",
+            "compute_median_ms": 15.41414737701416,
+            "call_median_ms": 15.432683001563419,
+            "compute_samples_ms": [
+              13.329648971557617,
+              15.043094635009766,
+              15.496715545654297,
+              15.529037475585938,
+              15.41414737701416
+            ],
+            "call_samples_ms": [
+              13.350388006074354,
+              15.05405699572293,
+              15.514218997850548,
+              15.553794997686055,
+              15.432683001563419
+            ],
+            "cpu_threads": 12,
+            "samples_per_pixel": 6,
+            "max_channel_error_vs_cpu": 0,
+            "raw_image_sha256": "502a9997bf83548bd4ff36e453b8d0c585e9bca5bc386da3bdd927ef38f9211c",
+            "mean_abs_channel_error_vs_cpu": 0,
+            "rmse_vs_cpu": 0.0,
+            "channels_over_1_fraction": 0.0,
+            "embree_build_ms": null
+          },
+          {
+            "backend": "CUDA GPU",
+            "compute_median_ms": 2.7537600994110107,
+            "call_median_ms": 2.8280740007176064,
+            "compute_samples_ms": [
+              2.7343039512634277,
+              3.3336639404296875,
+              2.7237119674682617,
+              2.7537600994110107,
+              2.779968023300171
+            ],
+            "call_samples_ms": [
+              2.8204100017319433,
+              3.4197700006188825,
+              2.7990189992124215,
+              2.8280740007176064,
+              2.8548059999593534
+            ],
+            "cpu_threads": 0,
+            "samples_per_pixel": 6,
+            "max_channel_error_vs_cpu": 0,
+            "raw_image_sha256": "502a9997bf83548bd4ff36e453b8d0c585e9bca5bc386da3bdd927ef38f9211c",
+            "mean_abs_channel_error_vs_cpu": 0,
+            "rmse_vs_cpu": 0.0,
+            "channels_over_1_fraction": 0.0,
+            "embree_build_ms": null
+          },
+          {
+            "backend": "Embree CPU multi",
+            "compute_median_ms": 9.427352905273438,
+            "call_median_ms": 9.44181099475827,
+            "compute_samples_ms": [
+              8.099306106567383,
+              8.985416412353516,
+              13.838233947753906,
+              14.259862899780273,
+              9.427352905273438
+            ],
+            "call_samples_ms": [
+              8.106701003271155,
+              8.99340100295376,
+              13.850246999936644,
+              14.27565400081221,
+              9.44181099475827
+            ],
+            "cpu_threads": 12,
+            "samples_per_pixel": 6,
+            "max_channel_error_vs_cpu": 1,
+            "raw_image_sha256": "349752e1954d6b57a05784eedfbaa80ba119f77fc5ac1ae1364661d4df54dc4c",
+            "mean_abs_channel_error_vs_cpu": 2.3148148148148147e-05,
+            "rmse_vs_cpu": 0.004811252243246881,
+            "channels_over_1_fraction": 0.0,
+            "embree_build_ms": 1.8899060487747192
+          }
+        ],
+        "bvh": {
+          "nodes": 1793,
+          "depth": 13,
+          "build_ms": 3.2112300395965576
+        }
+      }
+    ],
+    "scene": "Material gallery"
+  },
+  {
+    "snapshot_sha256": "f6b82b501dc980a2f5aa3dcb32a876893127166d3f0793271a2349da3538dbc8",
+    "triangles": 4914,
+    "library": "/home/muthibazz/Projects/Btech/HPC/HPC_Mini_Project/UnityRayTracer/Assets/Plugins/x86_64/libCudaRayTracer.so",
+    "library_sha256": "f18614bbfee8344d8ad37deba4ad10f429f5593d9cbb33b28a3cf27108b8d4de",
+    "omp_threads": "12",
+    "measured_passes": 5,
+    "warmup_passes": 1,
+    "method": "Standalone native render calls; same seeded paths per backend, one warm-up followed by measured passes. CUDA event compute time excludes readback; native call includes it. No Unity texture upload, display, or Editor FPS. Initialization and BVH build are separate.",
+    "results": [
+      {
+        "width": 320,
+        "height": 180,
+        "bounces": 6,
+        "rays_per_pixel": 1,
+        "initialize_ms": 170.75869499967666,
+        "backends": [
+          {
+            "backend": "CPU single",
+            "compute_median_ms": 133.46434020996094,
+            "call_median_ms": 133.48404900170863,
+            "compute_samples_ms": [
+              133.5029296875,
+              133.49053955078125,
+              133.423828125,
+              133.3814697265625,
+              133.46434020996094
+            ],
+            "call_samples_ms": [
+              133.5195469946484,
+              133.5091469954932,
+              133.45986300555523,
+              133.40473599964753,
+              133.48404900170863
+            ],
+            "cpu_threads": 1,
+            "samples_per_pixel": 6,
+            "max_channel_error_vs_cpu": 0,
+            "raw_image_sha256": "2a1ff36c7b9e00111090f64744d9acbfe4de5c1e18872c74fcdc34192779fd73",
+            "mean_abs_channel_error_vs_cpu": 0,
+            "rmse_vs_cpu": 0.0,
+            "channels_over_1_fraction": 0.0,
+            "embree_build_ms": null
+          },
+          {
+            "backend": "CPU multi",
+            "compute_median_ms": 20.11565589904785,
+            "call_median_ms": 20.13144599914085,
+            "compute_samples_ms": [
+              17.721324920654297,
+              30.37444305419922,
+              36.238563537597656,
+              19.97797203063965,
+              20.11565589904785
+            ],
+            "call_samples_ms": [
+              17.73974800016731,
+              30.392248001589905,
+              36.27157699520467,
+              20.005184996989556,
+              20.13144599914085
+            ],
+            "cpu_threads": 12,
+            "samples_per_pixel": 6,
+            "max_channel_error_vs_cpu": 0,
+            "raw_image_sha256": "2a1ff36c7b9e00111090f64744d9acbfe4de5c1e18872c74fcdc34192779fd73",
+            "mean_abs_channel_error_vs_cpu": 0,
+            "rmse_vs_cpu": 0.0,
+            "channels_over_1_fraction": 0.0,
+            "embree_build_ms": null
+          },
+          {
+            "backend": "CUDA GPU",
+            "compute_median_ms": 4.005919933319092,
+            "call_median_ms": 4.093572999408934,
+            "compute_samples_ms": [
+              4.005919933319092,
+              4.564159870147705,
+              3.9698879718780518,
+              3.977760076522827,
+              4.091008186340332
+            ],
+            "call_samples_ms": [
+              4.093572999408934,
+              4.647515001124702,
+              4.044348002935294,
+              4.062943997269031,
+              4.1712019956321456
+            ],
+            "cpu_threads": 0,
+            "samples_per_pixel": 6,
+            "max_channel_error_vs_cpu": 1,
+            "raw_image_sha256": "2f6c04fe19042c80ebd4e1a18520cf04144bf39d71d946e96d8ee52f9eb21100",
+            "mean_abs_channel_error_vs_cpu": 1.736111111111111e-05,
+            "rmse_vs_cpu": 0.004166666666666667,
+            "channels_over_1_fraction": 0.0,
+            "embree_build_ms": null
+          },
+          {
+            "backend": "Embree CPU multi",
+            "compute_median_ms": 14.511495590209961,
+            "call_median_ms": 14.523099001962692,
+            "compute_samples_ms": [
+              10.47192668914795,
+              14.511495590209961,
+              23.76692008972168,
+              23.29023551940918,
+              13.773341178894043
+            ],
+            "call_samples_ms": [
+              10.482917998160701,
+              14.523099001962692,
+              23.790876002749428,
+              23.32941100030439,
+              13.793158002954442
+            ],
+            "cpu_threads": 12,
+            "samples_per_pixel": 6,
+            "max_channel_error_vs_cpu": 23,
+            "raw_image_sha256": "c64258fa78023d1764ccd6e62850c57a0338dab2b830f9ef1ea662572f46babf",
+            "mean_abs_channel_error_vs_cpu": 0.00030092592592592595,
+            "rmse_vs_cpu": 0.06236095644623236,
+            "channels_over_1_fraction": 2.3148148148148147e-05,
+            "embree_build_ms": 2.4333879947662354
+          }
+        ],
+        "bvh": {
+          "nodes": 3339,
+          "depth": 18,
+          "build_ms": 5.860551834106445
+        }
+      }
+    ],
+    "scene": "Depth of field"
+  },
+  {
+    "snapshot_sha256": "4c0e00acfb2980754c9ac230204fe6c1f6f54bffa7fbf9cceccb8b178e21c623",
+    "triangles": 60998,
+    "library": "/home/muthibazz/Projects/Btech/HPC/HPC_Mini_Project/UnityRayTracer/Assets/Plugins/x86_64/libCudaRayTracer.so",
+    "library_sha256": "f18614bbfee8344d8ad37deba4ad10f429f5593d9cbb33b28a3cf27108b8d4de",
+    "omp_threads": "12",
+    "measured_passes": 5,
+    "warmup_passes": 1,
+    "method": "Standalone native render calls; same seeded paths per backend, one warm-up followed by measured passes. CUDA event compute time excludes readback; native call includes it. No Unity texture upload, display, or Editor FPS. Initialization and BVH build are separate.",
+    "results": [
+      {
+        "width": 320,
+        "height": 180,
+        "bounces": 4,
+        "rays_per_pixel": 1,
+        "initialize_ms": 348.1957619951572,
+        "backends": [
+          {
+            "backend": "CPU single",
+            "compute_median_ms": 99.6843032836914,
+            "call_median_ms": 99.71232600219082,
+            "compute_samples_ms": [
+              99.62926483154297,
+              104.55046081542969,
+              99.98124694824219,
+              99.30875396728516,
+              99.6843032836914
+            ],
+            "call_samples_ms": [
+              99.65458499937085,
+              104.57865100033814,
+              100.00700099772075,
+              99.3327979958849,
+              99.71232600219082
+            ],
+            "cpu_threads": 1,
+            "samples_per_pixel": 6,
+            "max_channel_error_vs_cpu": 0,
+            "raw_image_sha256": "22e9e41a3740b0bc67b3e7733b5c3b784dff4848729d1a9525c754df5ad8dcad",
+            "mean_abs_channel_error_vs_cpu": 0,
+            "rmse_vs_cpu": 0.0,
+            "channels_over_1_fraction": 0.0,
+            "embree_build_ms": null
+          },
+          {
+            "backend": "CPU multi",
+            "compute_median_ms": 30.376068115234375,
+            "call_median_ms": 30.407800993998535,
+            "compute_samples_ms": [
+              32.95394515991211,
+              30.955039978027344,
+              30.376068115234375,
+              23.100744247436523,
+              22.573631286621094
+            ],
+            "call_samples_ms": [
+              32.98763900238555,
+              30.988965998403728,
+              30.407800993998535,
+              23.130650995881297,
+              22.603159995924216
+            ],
+            "cpu_threads": 12,
+            "samples_per_pixel": 6,
+            "max_channel_error_vs_cpu": 0,
+            "raw_image_sha256": "22e9e41a3740b0bc67b3e7733b5c3b784dff4848729d1a9525c754df5ad8dcad",
+            "mean_abs_channel_error_vs_cpu": 0,
+            "rmse_vs_cpu": 0.0,
+            "channels_over_1_fraction": 0.0,
+            "embree_build_ms": null
+          },
+          {
+            "backend": "CUDA GPU",
+            "compute_median_ms": 4.1976318359375,
+            "call_median_ms": 4.273147002095357,
+            "compute_samples_ms": [
+              4.689472198486328,
+              4.1976318359375,
+              4.1910719871521,
+              4.158624172210693,
+              4.861695766448975
+            ],
+            "call_samples_ms": [
+              4.772716005390976,
+              4.273147002095357,
+              4.26507100200979,
+              4.245314004947431,
+              4.9302080005872995
+            ],
+            "cpu_threads": 0,
+            "samples_per_pixel": 6,
+            "max_channel_error_vs_cpu": 1,
+            "raw_image_sha256": "acbcdcbabcabe539d3f0dc29a60ff79f3ee4611794c9f764902fb79d0b9df671",
+            "mean_abs_channel_error_vs_cpu": 5.787037037037037e-06,
+            "rmse_vs_cpu": 0.0024056261216234406,
+            "channels_over_1_fraction": 0.0,
+            "embree_build_ms": null
+          },
+          {
+            "backend": "Embree CPU multi",
+            "compute_median_ms": 11.700785636901855,
+            "call_median_ms": 11.715704000380356,
+            "compute_samples_ms": [
+              11.263227462768555,
+              11.700785636901855,
+              17.172611236572266,
+              11.372746467590332,
+              13.55169677734375
+            ],
+            "call_samples_ms": [
+              11.27923699823441,
+              11.715704000380356,
+              17.1964180044597,
+              11.40141100040637,
+              13.576643999840599
+            ],
+            "cpu_threads": 12,
+            "samples_per_pixel": 6,
+            "max_channel_error_vs_cpu": 63,
+            "raw_image_sha256": "362e4ebb71c1e92c689b56da6bac627dca2a4d44d51ac84158cba494586f545e",
+            "mean_abs_channel_error_vs_cpu": 0.0017708333333333332,
+            "rmse_vs_cpu": 0.2120228848584598,
+            "channels_over_1_fraction": 0.00014467592592592592,
+            "embree_build_ms": 6.195213794708252
+          }
+        ],
+        "bvh": {
+          "nodes": 41053,
+          "depth": 21,
+          "build_ms": 91.49916076660156
+        }
+      }
+    ],
+    "scene": "Many Suzannes"
+  }
+]

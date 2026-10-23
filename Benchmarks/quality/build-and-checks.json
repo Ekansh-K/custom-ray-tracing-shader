@@ -1,0 +1,30 @@
+{
+  "gpu": "NVIDIA GeForce GTX 1650 4 GB",
+  "driver": "580.178.04",
+  "cuda": "13.0",
+  "cpu": "AMD Ryzen 5 5600H",
+  "optix": "9.0.0",
+  "optix_source_commit": "fff65c2a7c592f1ea5f1661ad7d2381cf965f9bd",
+  "optix_archive_sha256": "d5239da7ad098ae24afc6651d0cd3020ab0346a575ff4935a60e5494fd0bbe28",
+  "sampling": "Sobol with independent per-pixel/per-dimension digital shifts, same on all backends",
+  "denoiser": "OptiX AOV beauty model with HDR colour, albedo and world-space shading normal guides",
+  "tests": {
+    "sobol_cpu_cuda_identical_values": 1064960,
+    "unity_raw_demo_backend_renders": 20,
+    "unity_ai_demo_backend_renders": 20,
+    "native_ai_backend_agreement": "maximum display channel difference <= 1",
+    "cuda_memcheck_errors": 0,
+    "saved_scene_assets_unchanged": true,
+    "unity_console_errors": 0,
+    "unity_console_warnings": 0,
+    "quality_comparison": "Both fixed views: Sobol lowers mean error at 16 samples; Sobol + AI at 16 samples has lower error and less total time than previous PCG at 64 samples, across four seeds."
+  },
+  "source_sha256": {
+    "Native/renderer.cu": "8e5c3d7e969ec5b2923c2ec50f6434a9c41163538edd70bdbc727b12415d62df",
+    "Native/sampling.cuh": "b7dc6a9f7fe812ddecbf6bd6fdfda54f9d372b3669102f219e3673a9a49ee02b",
+    "Native/denoiser.cuh": "a4bac50cfcf45acb08d92cbc1f7971160e487665be41072dfb665126f6be54db",
+    "UnityRayTracer/Assets/RayTracing/RayTraceSession.cs": "0b274ed12966b7e7a56ba607729d8310ba5e69df7e9cc418464df312a7c0448d",
+    "UnityRayTracer/Assets/RayTracing/CudaRenderer.cs": "376475287552d9d08b8c1f6bd3bfbb9b42476374a603115394cd809202666cbc",
+    "UnityRayTracer/Assets/RayTracing/Editor/RendererSettingsWindow.cs": "e5c95cd2b132e7d82d30d42f1ce979f4bd3b8209231a7704c197115857145796"
+  }
+}

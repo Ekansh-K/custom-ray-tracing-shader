@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/CudaRoom.unity
+    guid: 2268ea88b79e50739983a9902f02a3e4
+  - enabled: 1
+    path: Assets/Scenes/DragonRoom.unity
+    guid: 11c7fad0d609057d3ab7c6dbf6942954
+  - enabled: 1
+    path: Assets/Scenes/MaterialGallery.unity
+    guid: 1728f134e4379f2b69f88b1a165c6013
+  - enabled: 1
+    path: Assets/Scenes/DepthOfField.unity
+    guid: e80abab1c0edda6f5aab819b136103ef
+  - enabled: 1
+    path: Assets/Scenes/ManySuzannes.unity
+    guid: 0c91a683a1afb4b628a962cae58a3114
+  m_configObjects:
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  m_UseUCBPForAssetBundles: 0

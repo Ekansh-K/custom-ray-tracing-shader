@@ -1,0 +1,89 @@
+{
+  "captured_at": "2026-10-23T15:43:53.798978+05:30",
+  "metadata": {
+    "width": 1280,
+    "height": 720,
+    "triangles": 982,
+    "inputWasEnabled": true,
+    "bvhNodes": 659,
+    "bvhDepth": 17,
+    "bvhBuildMs": 1.357142,
+    "scene": "Assets/Scenes/CudaRoom.unity",
+    "cameraX": 0.00385062885,
+    "cameraY": 2.2576673,
+    "cameraZ": -8.083102,
+    "cameraPitch": 6.08016825,
+    "cameraYaw": 0.1221207,
+    "cameraRoll": 4.1924e-10,
+    "fov": 42,
+    "renderer": "Progressive path tracer",
+    "raysPerPixelPerFrame": 1,
+    "maxBounces": 3,
+    "exposure": 1,
+    "aperture": 0,
+    "focusDistance": 8.8,
+    "skyStrength": 0.15,
+    "seed": 42,
+    "gpu": "NVIDIA GeForce GTX 1650",
+    "graphicsApi": "Vulkan",
+    "cpu": "AMD Ryzen 5 5600H with Radeon Graphics",
+    "logicalProcessors": 12,
+    "unity": "6000.3.26f1",
+    "vsync": 0,
+    "targetFrameRate": -1,
+    "screenWidth": 1315,
+    "screenHeight": 881,
+    "qualityCheck": "982 triangles, 1280x720; CPU single 973.91 ms; CPU multi (12 threads) 198.61 ms; CUDA 15.43 ms; differing pixels (>1/255): 0; max channel difference: 1"
+  },
+  "warmup_frames_per_backend": 3,
+  "order": [
+    "CPU single",
+    "CPU multi",
+    "CUDA GPU"
+  ],
+  "method": "One fixed-camera batch in Unity Editor. 30 consecutive path-tracing passes per backend after 3 warm-up passes. Accumulation resets at every backend switch; measured sample counts are 4 through 33 times rays-per-pixel on all three devices. FPS is completed frames divided by wall time, observed via EditorApplication.update. Compute uses existing CPU wall clock or CUDA events. Native-call time includes CUDA synchronization and readback, but excludes texture upload and display. Scene upload and initialization are excluded. Editor frame pacing, other applications, and power conditions affect results. This is an initial performance baseline, not a controlled final benchmark.",
+  "results": [
+    {
+      "backend": "CPU single",
+      "samples": 30,
+      "cpu_threads": [
+        1
+      ],
+      "compute_median_ms": 954.4506739999999,
+      "native_call_median_ms": 961.2531,
+      "unity_editor_fps": 1.0237966022995357,
+      "frame_interval_median_ms": 971.2982279999949,
+      "frame_interval_min_ms": 944.3617549999885,
+      "frame_interval_max_ms": 1046.4541539999743,
+      "image_sha256": "d9fd00b7c215ffca9a751402b418ebf26f5aa71b71687c66d285cc5b5a430e57"
+    },
+    {
+      "backend": "CPU multi",
+      "samples": 30,
+      "cpu_threads": [
+        12
+      ],
+      "compute_median_ms": 181.508461,
+      "native_call_median_ms": 189.7399,
+      "unity_editor_fps": 4.810503618429081,
+      "frame_interval_median_ms": 196.89601650000554,
+      "frame_interval_min_ms": 183.54691900003672,
+      "frame_interval_max_ms": 270.25893000001133,
+      "image_sha256": "d9fd00b7c215ffca9a751402b418ebf26f5aa71b71687c66d285cc5b5a430e57"
+    },
+    {
+      "backend": "CUDA GPU",
+      "samples": 30,
+      "cpu_threads": [
+        0
+      ],
+      "compute_median_ms": 16.22087955,
+      "native_call_median_ms": 24.3056,
+      "unity_editor_fps": 33.45132149646241,
+      "frame_interval_median_ms": 29.665862499996365,
+      "frame_interval_min_ms": 26.278617999992093,
+      "frame_interval_max_ms": 37.8467069999715,
+      "image_sha256": "47092b0a283600aec32313fa05763f4931137f2ff316432d61be9fcb0b2e50d8"
+    }
+  ]
+}

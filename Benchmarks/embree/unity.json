@@ -1,0 +1,121 @@
+{
+  "captured_at": "2026-10-23T16:24:20.762276+05:30",
+  "metadata": {
+    "width": 1280,
+    "height": 720,
+    "triangles": 982,
+    "inputWasEnabled": true,
+    "backgroundWasEnabled": false,
+    "bvhNodes": 659,
+    "bvhDepth": 17,
+    "bvhBuildMs": 1.199719,
+    "scene": "Assets/Scenes/CudaRoom.unity",
+    "cameraX": 0,
+    "cameraY": 2.3,
+    "cameraZ": -8.5,
+    "cameraPitch": 2.69428468,
+    "cameraYaw": 0,
+    "cameraRoll": 0,
+    "fov": 42,
+    "renderer": "Progressive path tracer",
+    "raysPerPixelPerFrame": 1,
+    "maxBounces": 3,
+    "exposure": 1,
+    "aperture": 0,
+    "focusDistance": 8.8,
+    "skyStrength": 0.15,
+    "seed": 42,
+    "gpu": "NVIDIA GeForce GTX 1650",
+    "graphicsApi": "Vulkan",
+    "cpu": "AMD Ryzen 5 5600H with Radeon Graphics",
+    "logicalProcessors": 12,
+    "unity": "6000.3.26f1",
+    "vsync": 0,
+    "targetFrameRate": -1,
+    "screenWidth": 658,
+    "screenHeight": 557,
+    "qualityCheck": "982 triangles, 1280x720; CPU single 923.32 ms; CPU multi (12 threads) 182.43 ms; CUDA 14.69 ms; differing pixels (>1/255): 0; max channel difference: 1"
+  },
+  "warmup_frames_per_backend": 3,
+  "order": [
+    "CPU single",
+    "CPU multi",
+    "CUDA GPU",
+    "Embree CPU multi"
+  ],
+  "method": "One fixed-camera batch in Unity Editor. 30 consecutive path-tracing passes per backend after 3 warm-up passes. Accumulation resets at every backend switch; measured sample counts are 4 through 33 times rays-per-pixel on all four backends. FPS is completed frames divided by wall time, observed via EditorApplication.update. Compute uses existing CPU wall clock or CUDA events. Native-call time includes CUDA synchronization and readback, but excludes texture upload and display. Scene upload and initialization are excluded. Editor frame pacing, other applications, and power conditions affect results. Embree uses its independent triangle intersections with the shared integrator. RGB image errors are reported at the same accumulated sample count. These Editor measurements are separate from the standalone native benchmark.",
+  "results": [
+    {
+      "backend": "CPU single",
+      "samples": 30,
+      "mean_abs_channel_error_vs_cpu": 0,
+      "rmse_vs_cpu": 0.0,
+      "max_channel_error_vs_cpu": 0,
+      "channels_over_1_fraction": 0.0,
+      "cpu_threads": [
+        1
+      ],
+      "compute_median_ms": 939.3027999999999,
+      "native_call_median_ms": 945.7046,
+      "unity_editor_fps": 1.0471483356765954,
+      "frame_interval_median_ms": 951.5058630000226,
+      "frame_interval_min_ms": 917.4134300000105,
+      "frame_interval_max_ms": 1082.784433000029,
+      "image_sha256": "839ac96de62d536cb35bdd668ac39a80ac2f7a63969159f40b58fc9746bb49ba"
+    },
+    {
+      "backend": "CPU multi",
+      "samples": 30,
+      "mean_abs_channel_error_vs_cpu": 0,
+      "rmse_vs_cpu": 0.0,
+      "max_channel_error_vs_cpu": 0,
+      "channels_over_1_fraction": 0.0,
+      "cpu_threads": [
+        12
+      ],
+      "compute_median_ms": 170.0522765,
+      "native_call_median_ms": 177.49195,
+      "unity_editor_fps": 5.267709947473162,
+      "frame_interval_median_ms": 183.470624999984,
+      "frame_interval_min_ms": 168.2954030000019,
+      "frame_interval_max_ms": 254.33795799995096,
+      "image_sha256": "839ac96de62d536cb35bdd668ac39a80ac2f7a63969159f40b58fc9746bb49ba"
+    },
+    {
+      "backend": "CUDA GPU",
+      "samples": 30,
+      "mean_abs_channel_error_vs_cpu": 1.3744212962962963e-05,
+      "rmse_vs_cpu": 0.003707318837510872,
+      "max_channel_error_vs_cpu": 1,
+      "channels_over_1_fraction": 0.0,
+      "cpu_threads": [
+        0
+      ],
+      "compute_median_ms": 15.4071842,
+      "native_call_median_ms": 22.945349999999998,
+      "unity_editor_fps": 36.29352273274396,
+      "frame_interval_median_ms": 26.29072549996181,
+      "frame_interval_min_ms": 25.280735000023924,
+      "frame_interval_max_ms": 35.86954499996864,
+      "image_sha256": "dc031d7e516a63136e08bf05137d6262889d961474762ef1f8b2974548f3287e"
+    },
+    {
+      "backend": "Embree CPU multi",
+      "samples": 30,
+      "mean_abs_channel_error_vs_cpu": 4.955150462962963e-05,
+      "rmse_vs_cpu": 0.012162694366761801,
+      "max_channel_error_vs_cpu": 9,
+      "channels_over_1_fraction": 7.595486111111111e-06,
+      "cpu_threads": [
+        12
+      ],
+      "compute_median_ms": 128.5256195,
+      "native_call_median_ms": 136.63459999999998,
+      "unity_editor_fps": 6.887516031439775,
+      "frame_interval_median_ms": 143.51927199999182,
+      "frame_interval_min_ms": 134.47071799998866,
+      "frame_interval_max_ms": 175.6354450000117,
+      "image_sha256": "05be93971a850eb2211c0013184a86d54d86284857260ac91b00f06ca69afded"
+    }
+  ]
+}

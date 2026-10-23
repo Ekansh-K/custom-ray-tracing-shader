@@ -1,0 +1,56 @@
+[
+  {
+    "scene": 0,
+    "loaded": 1,
+    "cameras": 1,
+    "unloaded": true,
+    "samples": 1,
+    "threads": 12,
+    "embreeBuildMs": 0.38555
+  },
+  {
+    "scene": 1,
+    "loaded": 1,
+    "cameras": 1,
+    "unloaded": true,
+    "samples": 1,
+    "threads": 12,
+    "embreeBuildMs": 4.629507
+  },
+  {
+    "scene": 2,
+    "loaded": 1,
+    "cameras": 1,
+    "unloaded": true,
+    "samples": 1,
+    "threads": 12,
+    "embreeBuildMs": 0.838137
+  },
+  {
+    "scene": 3,
+    "loaded": 1,
+    "cameras": 1,
+    "unloaded": true,
+    "samples": 1,
+    "threads": 12,
+    "embreeBuildMs": 1.270246
+  },
+  {
+    "scene": 4,
+    "loaded": 1,
+    "cameras": 1,
+    "unloaded": true,
+    "samples": 1,
+    "threads": 12,
+    "embreeBuildMs": 3.40569
+  },
+  {
+    "scene": 0,
+    "loaded": 1,
+    "cameras": 1,
+    "unloaded": true,
+    "samples": 1,
+    "threads": 12,
+    "embreeBuildMs": 0.41695
+  }
+]

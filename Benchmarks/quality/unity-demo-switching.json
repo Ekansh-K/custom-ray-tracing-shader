@@ -1,0 +1,80 @@
+[
+  {
+    "scene": 0,
+    "loaded": 1,
+    "cameras": 1,
+    "unloaded": true,
+    "samples": 1,
+    "threads": 12,
+    "embreeBuildMs": 0.384698,
+    "aiEnabled": true,
+    "aiMs": 64.8534,
+    "aiError": null,
+    "displayedSamples": 1
+  },
+  {
+    "scene": 1,
+    "loaded": 1,
+    "cameras": 1,
+    "unloaded": true,
+    "samples": 1,
+    "threads": 12,
+    "embreeBuildMs": 4.633319,
+    "aiEnabled": true,
+    "aiMs": 70.9213,
+    "aiError": null,
+    "displayedSamples": 1
+  },
+  {
+    "scene": 2,
+    "loaded": 1,
+    "cameras": 1,
+    "unloaded": true,
+    "samples": 1,
+    "threads": 12,
+    "embreeBuildMs": 0.832628,
+    "aiEnabled": true,
+    "aiMs": 65.61315,
+    "aiError": null,
+    "displayedSamples": 1
+  },
+  {
+    "scene": 3,
+    "loaded": 1,
+    "cameras": 1,
+    "unloaded": true,
+    "samples": 1,
+    "threads": 12,
+    "embreeBuildMs": 1.297148,
+    "aiEnabled": true,
+    "aiMs": 63.69521,
+    "aiError": null,
+    "displayedSamples": 1
+  },
+  {
+    "scene": 4,
+    "loaded": 1,
+    "cameras": 1,
+    "unloaded": true,
+    "samples": 1,
+    "threads": 12,
+    "embreeBuildMs": 3.225402,
+    "aiEnabled": true,
+    "aiMs": 65.53199,
+    "aiError": null,
+    "displayedSamples": 1
+  },
+  {
+    "scene": 0,
+    "loaded": 1,
+    "cameras": 1,
+    "unloaded": true,
+    "samples": 1,
+    "threads": 12,
+    "embreeBuildMs": 0.385471,
+    "aiEnabled": true,
+    "aiMs": 65.3652,
+    "aiError": null,
+    "displayedSamples": 1
+  }
+]

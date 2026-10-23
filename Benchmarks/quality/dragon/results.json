@@ -1,0 +1,245 @@
+{
+  "captured_at": "2026-10-23T11:56:28.221065+00:00",
+  "snapshot": "Benchmarks/quality/dragon/scene.json.gz",
+  "snapshot_sha256": "8c3a75a36bc9063bf0fceb2265922e3c8d513adf22bac61e43e5d8909ca3e477",
+  "before_library_sha256": "f18614bbfee8344d8ad37deba4ad10f429f5593d9cbb33b28a3cf27108b8d4de",
+  "library_sha256": "828cd3e73e25fb9f4168160c62f92ae3c8d86908c4ee4040aae9df70e1ec1398",
+  "width": 320,
+  "height": 180,
+  "bounces": 8,
+  "reference_samples": 2048,
+  "reference_seed": 20261023,
+  "reference_ms": 19949.934153999493,
+  "notes": "RGB display-space RMSE against independent Sobol reference; four seeds per low-sample method. CUDA render wall time includes raw readback. AI total includes inference, transfers and first-use model initialization when incurred. No fixed speedup assumed.",
+  "summaries": [
+    {
+      "method": "PCG",
+      "samples": 16,
+      "mean_rmse": 29.973633016263406,
+      "median_render_ms": 124.22964199868147,
+      "median_total_ms": 124.22964199868147
+    },
+    {
+      "method": "Sobol",
+      "samples": 16,
+      "mean_rmse": 29.27738488733944,
+      "median_render_ms": 154.0849345001334,
+      "median_total_ms": 154.0849345001334
+    },
+    {
+      "method": "Sobol + AI",
+      "samples": 16,
+      "mean_rmse": 9.87907052567076,
+      "median_render_ms": 154.0849345001334,
+      "median_total_ms": 196.11373750012717
+    },
+    {
+      "method": "PCG",
+      "samples": 64,
+      "mean_rmse": 21.386661667448884,
+      "median_render_ms": 493.5049705018173,
+      "median_total_ms": 493.5049705018173
+    },
+    {
+      "method": "Sobol",
+      "samples": 64,
+      "mean_rmse": 21.10653161885054,
+      "median_render_ms": 615.1244944994687,
+      "median_total_ms": 615.1244944994687
+    },
+    {
+      "method": "Sobol + AI",
+      "samples": 64,
+      "mean_rmse": 7.928298691703023,
+      "median_render_ms": 615.1244944994687,
+      "median_total_ms": 656.9318369984103
+    }
+  ],
+  "measurements": [
+    {
+      "method": "PCG",
+      "samples": 16,
+      "seed": 42,
+      "render_ms": 122.63920000259532,
+      "rmse": 29.845370205195735
+    },
+    {
+      "method": "Sobol",
+      "samples": 16,
+      "seed": 42,
+      "render_ms": 153.81931600131793,
+      "rmse": 29.115557402707758
+    },
+    {
+      "method": "Sobol + AI",
+      "samples": 16,
+      "seed": 42,
+      "render_ms": 153.81931600131793,
+      "denoise_ms": 166.04327399545582,
+      "total_ms": 319.86258999677375,
+      "rmse": 9.934746590367306
+    },
+    {
+      "method": "PCG",
+      "samples": 16,
+      "seed": 73,
+      "render_ms": 123.86051199428039,
+      "rmse": 29.992604798393096
+    },
+    {
+      "method": "Sobol",
+      "samples": 16,
+      "seed": 73,
+      "render_ms": 154.5201570042991,
+      "rmse": 29.253683588092322
+    },
+    {
+      "method": "Sobol + AI",
+      "samples": 16,
+      "seed": 73,
+      "render_ms": 154.5201570042991,
+      "denoise_ms": 41.69643699424341,
+      "total_ms": 196.21659399854252,
+      "rmse": 9.800107472955666
+    },
+    {
+      "method": "PCG",
+      "samples": 16,
+      "seed": 314,
+      "render_ms": 124.59877200308256,
+      "rmse": 29.99375050647125
+    },
+    {
+      "method": "Sobol",
+      "samples": 16,
+      "seed": 314,
+      "render_ms": 154.35055299894884,
+      "rmse": 29.411393727916373
+    },
+    {
+      "method": "Sobol + AI",
+      "samples": 16,
+      "seed": 314,
+      "render_ms": 154.35055299894884,
+      "denoise_ms": 41.66032800276298,
+      "total_ms": 196.01088100171182,
+      "rmse": 9.890340873427599
+    },
+    {
+      "method": "PCG",
+      "samples": 16,
+      "seed": 1234,
+      "render_ms": 125.09485999908065,
+      "rmse": 30.062806554993546
+    },
+    {
+      "method": "Sobol",
+      "samples": 16,
+      "seed": 1234,
+      "render_ms": 152.58957300102338,
+      "rmse": 29.328904830641306
+    },
+    {
+      "method": "Sobol + AI",
+      "samples": 16,
+      "seed": 1234,
+      "render_ms": 152.58957300102338,
+      "denoise_ms": 42.10721099661896,
+      "total_ms": 194.69678399764234,
+      "rmse": 9.891087165932472
+    },
+    {
+      "method": "PCG",
+      "samples": 64,
+      "seed": 42,
+      "render_ms": 494.1970690051676,
+      "rmse": 21.329193527364737
+    },
+    {
+      "method": "Sobol",
+      "samples": 64,
+      "seed": 42,
+      "render_ms": 614.0699480019975,
+      "rmse": 21.010005057115052
+    },
+    {
+      "method": "Sobol + AI",
+      "samples": 64,
+      "seed": 42,
+      "render_ms": 614.0699480019975,
+      "denoise_ms": 41.81094699742971,
+      "total_ms": 655.8808949994273,
+      "rmse": 7.839586747423002
+    },
+    {
+      "method": "PCG",
+      "samples": 64,
+      "seed": 73,
+      "render_ms": 492.812871998467,
+      "rmse": 21.334659382615467
+    },
+    {
+      "method": "Sobol",
+      "samples": 64,
+      "seed": 73,
+      "render_ms": 615.6613959974493,
+      "rmse": 21.275783513665726
+    },
+    {
+      "method": "Sobol + AI",
+      "samples": 64,
+      "seed": 73,
+      "render_ms": 615.6613959974493,
+      "denoise_ms": 42.02602899749763,
+      "total_ms": 657.6874249949469,
+      "rmse": 8.05456830636204
+    },
+    {
+      "method": "PCG",
+      "samples": 64,
+      "seed": 314,
+      "render_ms": 494.471389996761,
+      "rmse": 21.425050644955054
+    },
+    {
+      "method": "Sobol",
+      "samples": 64,
+      "seed": 314,
+      "render_ms": 616.8143350005266,
+      "rmse": 21.10465421176448
+    },
+    {
+      "method": "Sobol + AI",
+      "samples": 64,
+      "seed": 314,
+      "render_ms": 616.8143350005266,
+      "denoise_ms": 41.630314000940416,
+      "total_ms": 658.444649001467,
+      "rmse": 7.854592163540737
+    },
+    {
+      "method": "PCG",
+      "samples": 64,
+      "seed": 1234,
+      "render_ms": 491.0417659993982,
+      "rmse": 21.45774311486027
+    },
+    {
+      "method": "Sobol",
+      "samples": 64,
+      "seed": 1234,
+      "render_ms": 614.5875930014881,
+      "rmse": 21.035683692856907
+    },
+    {
+      "method": "Sobol + AI",
+      "samples": 64,
+      "seed": 1234,
+      "render_ms": 614.5875930014881,
+      "denoise_ms": 41.58865600038553,
+      "total_ms": 656.1762490018737,
+      "rmse": 7.964447549486311
+    }
+  ],
+  "raw_accumulation_unchanged": true
+}

@@ -1,0 +1,324 @@
+{
+  "snapshot_sha256": "9170380f9f2e97f649e73443bc30c99bb9ef257276aa4ab43a9b5e359070112c",
+  "triangles": 982,
+  "library": "/home/muthibazz/Projects/Btech/HPC/HPC_Mini_Project/scratch/bvh/before/UnityRayTracer/Assets/Plugins/x86_64/libCudaRayTracer.so",
+  "library_sha256": "e6010cbef3661cab48c598e50896732b1b4a036c752d15f30c7df6b656e0f571",
+  "omp_threads": "12",
+  "measured_passes": 5,
+  "warmup_passes": 1,
+  "method": "Standalone native render calls; same seeded paths per backend, one warm-up followed by measured passes. CUDA event compute time excludes readback; native call includes it. No Unity texture upload, display, or Editor FPS. Initialization and BVH build are separate.",
+  "results": [
+    {
+      "width": 320,
+      "height": 180,
+      "bounces": 3,
+      "rays_per_pixel": 1,
+      "initialize_ms": 221.76682600183995,
+      "backends": [
+        {
+          "backend": "CPU single",
+          "compute_median_ms": 440.8111877441406,
+          "call_median_ms": 440.8626069998718,
+          "compute_samples_ms": [
+            468.57220458984375,
+            439.71697998046875,
+            440.8111877441406,
+            450.0893859863281,
+            437.3999938964844
+          ],
+          "call_samples_ms": [
+            468.6010370023723,
+            439.756325999042,
+            440.8626069998718,
+            450.12244199824636,
+            437.4282709977706
+          ],
+          "cpu_threads": 1,
+          "samples_per_pixel": 6,
+          "max_channel_error_vs_cpu": 0,
+          "raw_image_sha256": "1b535c674492480b57b0feeb81e4d96235643333a9499f537072822b2b7bcbdb"
+        },
+        {
+          "backend": "CPU multi",
+          "compute_median_ms": 92.9658432006836,
+          "call_median_ms": 92.99906499654753,
+          "compute_samples_ms": [
+            91.37690734863281,
+            74.5167007446289,
+            92.9658432006836,
+            104.9619140625,
+            140.9559326171875
+          ],
+          "call_samples_ms": [
+            91.40768799989019,
+            74.54639200295787,
+            92.99906499654753,
+            104.99728600188973,
+            140.99101700048777
+          ],
+          "cpu_threads": 12,
+          "samples_per_pixel": 6,
+          "max_channel_error_vs_cpu": 0,
+          "raw_image_sha256": "1b535c674492480b57b0feeb81e4d96235643333a9499f537072822b2b7bcbdb"
+        },
+        {
+          "backend": "CUDA GPU",
+          "compute_median_ms": 12.208160400390625,
+          "call_median_ms": 12.525636000646045,
+          "compute_samples_ms": [
+            12.55788803100586,
+            12.208160400390625,
+            12.039872169494629,
+            11.958175659179688,
+            12.488320350646973
+          ],
+          "call_samples_ms": [
+            12.734810999972979,
+            12.525636000646045,
+            12.19995900100912,
+            12.097441001969855,
+            12.762324000505032
+          ],
+          "cpu_threads": 0,
+          "samples_per_pixel": 6,
+          "max_channel_error_vs_cpu": 1,
+          "raw_image_sha256": "6064059c061d32c2c09ff1bb8fed0c0d1e9f5a796a7b743ff482ff806356ef96"
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "height": 180,
+      "bounces": 8,
+      "rays_per_pixel": 1,
+      "initialize_ms": 0.6776629998057615,
+      "backends": [
+        {
+          "backend": "CPU single",
+          "compute_median_ms": 601.21484375,
+          "call_median_ms": 601.2414719989465,
+          "compute_samples_ms": [
+            601.2650756835938,
+            612.292724609375,
+            591.7188110351562,
+            601.21484375,
+            583.7166137695312
+          ],
+          "call_samples_ms": [
+            601.2978789985937,
+            612.3317149977083,
+            591.7495510002482,
+            601.2414719989465,
+            583.7427149999712
+          ],
+          "cpu_threads": 1,
+          "samples_per_pixel": 6,
+          "max_channel_error_vs_cpu": 0,
+          "raw_image_sha256": "488a101f4bfb9c07d46175a2f863c931f67f2ba37462c0bed5b325d3d78a84ae"
+        },
+        {
+          "backend": "CPU multi",
+          "compute_median_ms": 100.40641784667969,
+          "call_median_ms": 100.45312899819692,
+          "compute_samples_ms": [
+            99.48606872558594,
+            100.40641784667969,
+            98.74752044677734,
+            109.89122772216797,
+            112.2905044555664
+          ],
+          "call_samples_ms": [
+            99.51969599933363,
+            100.45312899819692,
+            98.79435599941644,
+            109.92379099843674,
+            112.31927900007577
+          ],
+          "cpu_threads": 12,
+          "samples_per_pixel": 6,
+          "max_channel_error_vs_cpu": 0,
+          "raw_image_sha256": "488a101f4bfb9c07d46175a2f863c931f67f2ba37462c0bed5b325d3d78a84ae"
+        },
+        {
+          "backend": "CUDA GPU",
+          "compute_median_ms": 21.734943389892578,
+          "call_median_ms": 21.881697000935674,
+          "compute_samples_ms": [
+            21.7478084564209,
+            22.17411231994629,
+            21.06073570251465,
+            21.184192657470703,
+            21.734943389892578
+          ],
+          "call_samples_ms": [
+            21.918730999459513,
+            22.338322996802162,
+            21.201882998866495,
+            21.374322001065593,
+            21.881697000935674
+          ],
+          "cpu_threads": 0,
+          "samples_per_pixel": 6,
+          "max_channel_error_vs_cpu": 1,
+          "raw_image_sha256": "f61a7d39b1e906a9cad75c99a1ddecff80912ffdfb3984a317f60a771e5009e5"
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "bounces": 3,
+      "rays_per_pixel": 1,
+      "initialize_ms": 7.137529999454273,
+      "backends": [
+        {
+          "backend": "CPU single",
+          "compute_median_ms": 6738.93994140625,
+          "call_median_ms": 6738.971180999215,
+          "compute_samples_ms": [
+            6611.63623046875,
+            6738.93994140625,
+            6764.06103515625,
+            6857.0478515625,
+            6430.8447265625
+          ],
+          "call_samples_ms": [
+            6611.677964996488,
+            6738.971180999215,
+            6764.089705000515,
+            6857.076533000509,
+            6430.873872999655
+          ],
+          "cpu_threads": 1,
+          "samples_per_pixel": 6,
+          "max_channel_error_vs_cpu": 0,
+          "raw_image_sha256": "f01cb13f7a008e5b46873db276f9eda8c13196f9ad4cfdfa25e802e84e60adf2"
+        },
+        {
+          "backend": "CPU multi",
+          "compute_median_ms": 1354.712890625,
+          "call_median_ms": 1354.7475569976086,
+          "compute_samples_ms": [
+            1379.95703125,
+            1354.712890625,
+            1609.2132568359375,
+            1271.9561767578125,
+            1325.9105224609375
+          ],
+          "call_samples_ms": [
+            1379.992090001906,
+            1354.7475569976086,
+            1609.2435130012746,
+            1271.99430499968,
+            1325.9517700025754
+          ],
+          "cpu_threads": 12,
+          "samples_per_pixel": 6,
+          "max_channel_error_vs_cpu": 0,
+          "raw_image_sha256": "f01cb13f7a008e5b46873db276f9eda8c13196f9ad4cfdfa25e802e84e60adf2"
+        },
+        {
+          "backend": "CUDA GPU",
+          "compute_median_ms": 128.7427215576172,
+          "call_median_ms": 129.481924999709,
+          "compute_samples_ms": [
+            128.7427215576172,
+            128.6907501220703,
+            127.52252960205078,
+            129.16355895996094,
+            128.79600524902344
+          ],
+          "call_samples_ms": [
+            129.481924999709,
+            129.42098699932103,
+            128.39062399871182,
+            130.08986600107164,
+            129.52653499814915
+          ],
+          "cpu_threads": 0,
+          "samples_per_pixel": 6,
+          "max_channel_error_vs_cpu": 1,
+          "raw_image_sha256": "d16c97386b7a15e8d1e8dbf4359c6101c9fab1c44af2f35792f2198110bb7114"
+        }
+      ]
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "bounces": 8,
+      "rays_per_pixel": 1,
+      "initialize_ms": 2.443779001623625,
+      "backends": [
+        {
+          "backend": "CPU single",
+          "compute_median_ms": 9806.0234375,
+          "call_median_ms": 9806.05060200105,
+          "compute_samples_ms": [
+            9737.4658203125,
+            9806.0234375,
+            10006.982421875,
+            9782.7333984375,
+            10010.865234375
+          ],
+          "call_samples_ms": [
+            9737.495940000372,
+            9806.05060200105,
+            10007.012152000243,
+            9782.765882999229,
+            10010.89620899802
+          ],
+          "cpu_threads": 1,
+          "samples_per_pixel": 6,
+          "max_channel_error_vs_cpu": 0,
+          "raw_image_sha256": "2d3dfd55e2313476c8cb56b9fec0b1a148a7bf79cf024aca9bace36d72964159"
+        },
+        {
+          "backend": "CPU multi",
+          "compute_median_ms": 1857.9002685546875,
+          "call_median_ms": 1857.941660000506,
+          "compute_samples_ms": [
+            1806.81298828125,
+            1746.9521484375,
+            1880.2530517578125,
+            1987.3804931640625,
+            1857.9002685546875
+          ],
+          "call_samples_ms": [
+            1806.8449610000243,
+            1746.982704000402,
+            1880.2846459984721,
+            1987.4157570011448,
+            1857.941660000506
+          ],
+          "cpu_threads": 12,
+          "samples_per_pixel": 6,
+          "max_channel_error_vs_cpu": 0,
+          "raw_image_sha256": "2d3dfd55e2313476c8cb56b9fec0b1a148a7bf79cf024aca9bace36d72964159"
+        },
+        {
+          "backend": "CUDA GPU",
+          "compute_median_ms": 219.1146240234375,
+          "call_median_ms": 219.86531899892725,
+          "compute_samples_ms": [
+            218.5377655029297,
+            219.1146240234375,
+            219.4363250732422,
+            219.11541748046875,
+            217.5978546142578
+          ],
+          "call_samples_ms": [
+            219.42032799779554,
+            219.86531899892725,
+            220.53362099904916,
+            219.9053369986359,
+            218.36177299701376
+          ],
+          "cpu_threads": 0,
+          "samples_per_pixel": 6,
+          "max_channel_error_vs_cpu": 1,
+          "raw_image_sha256": "e118b27200940f122826e28e9e18e25399b94174c80cce5d9d5783d4b4517597"
+        }
+      ]
+    }
+  ]
+}
