@@ -6,16 +6,4 @@ I use Unity for the scenes and camera, with C++ and CUDA for the renderer. I'm c
 
 ![My ray tracer rendering the dragon room](docs/images/dragon-room.jpg)
 
-## Run it
 
-My current setup uses Linux, Unity 6000.3.26f1, CUDA 13, and an NVIDIA GPU with driver R570 or newer.
-
-```sh
-./Tools/install_embree.sh
-./Tools/install_optix.sh
-./Native/build.sh
-```
-
-Open `UnityRayTracer` in Unity, open a demo in `Assets/Scenes`, and press Play. Press F1 for the renderer settings.
-
-The dragon model and room are adapted from Sebastian Lague's project. His [MIT license](UnityRayTracer/Assets/RayTracing/Models/Sebastian-Lague-LICENSE.txt) is included with the assets.
